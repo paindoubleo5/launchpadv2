@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  output: "export",
+  trailingSlash: true,
   images: { unoptimized: true },
-  output: "export",           // ← this line kills the 404
+  reactStrictMode: true,
 };
 
 export default nextConfig;
